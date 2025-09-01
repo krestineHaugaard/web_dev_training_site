@@ -1,0 +1,25 @@
+@import "variables.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1rem auto 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  background-color: black;
+}
+
+@media (min-width: 1000px) {
+  section {
+    grid-column: 2/3;
+  }
+}
