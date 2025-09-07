@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="javascript/tax-calculator.js"></script>
+    <link rel="stylesheet" href="style/tax-calculator.css" />
     <title>Tax calculator | Web dev training</title>
   </head>
   <body>
@@ -11,20 +12,23 @@
       <h1>Tax calculator</h1>
     </header>
     <main>
-      <form>
+      <form id="tax_form">
         <div>
-          <label for="txtMonetaryAmount"></label>
+          <label for="txtMonetaryAmount">Monetary amount</label>
           <input type="number" id="txtMonetaryAmount" step=".01" required />
         </div>
         <div>
-          <label for="txtTaxPercentage"></label>
+          <label for="txtTaxPercentage">Tax percentage</label>
           <input type="number" id="txtTaxPercentage" step=".01" required />
         </div>
         <div>
           <input type="submit" value="Calculate" />
         </div>
       </form>
-      <section id="tax_calc_output"></section>
+      <section id="tax_calc_output">
+        <p>Tax amount: <span id="finalTaxAmount"></span></p>
+        <p>Final amount: <span id="finalMoneyAmount"></span></p>
+      </section>
     </main>
     <footer></footer>
   </body>
