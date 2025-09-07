@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="javascript/tax-calculator.js"></script>
+    <title>Tax calculator | Web dev training</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tax calculator</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="txtMonetaryAmount"></label>
+          <input type="number" id="txtMonetaryAmount" step=".01" required />
+        </div>
+        <div>
+          <label for="txtTaxPercentage"></label>
+          <input type="number" id="txtTaxPercentage" step=".01" required />
+        </div>
+        <div>
+          <input type="submit" value="Calculate" />
+        </div>
+      </form>
+      <section id="tax_calc_output"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
