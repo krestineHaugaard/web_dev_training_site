@@ -12,30 +12,30 @@ document.querySelector("#converter_form").addEventListener("submit", (e) => {
   if (convertFrom === "C") {
     if (convertToo === "F") {
       const convert = convertValue * 1.8 + 32;
-      finalConvert.innerHTML = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
+      finalConvert.innerText = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
     } else {
       const convert = convertValue + 273.15;
-      finalConvert.innerHTML = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
+      finalConvert.innerText = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
     }
   } else if (convertFrom === "F") {
     if (convertToo === "K") {
       const convert = (convertValue + 459.67) / 1.8;
-      finalConvert.innerHTML = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
+      finalConvert.innerText = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
       //   af uforklarelige årsager er denne den eneste der ikke ønsker at gøre det rigtigt ¯\_(ツ)_/¯
     } else {
       const convert = (convertValue - 32) / 1.8;
-      finalConvert.innerHTML = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
+      finalConvert.innerText = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
     }
   } else if (convertFrom === "K") {
     if (convertToo === "C") {
       const convert = convertValue - 273.15;
-      finalConvert.innerHTML = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
+      finalConvert.innerText = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
     } else {
       const convert = convertValue * 1.8 - 459.67;
-      finalConvert.innerHTML = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
+      finalConvert.innerText = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
     }
   } else {
     const convert = convertValue;
-    finalConvert.innerHTML = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
+    finalConvert.innerText = `${convertValue}&deg;${convertFrom} = ${convert}&deg;${convertToo}`;
   }
 });
