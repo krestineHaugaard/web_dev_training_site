@@ -9,6 +9,6 @@ document.querySelector("#tax_form").addEventListener("submit", (e) => {
   const taxAmount = moneytaryAmount * usableTax;
   const finalAmount = moneytaryAmount - taxAmount;
 
-  document.querySelector("#finalTaxAmount").innerHTML = taxAmount;
-  document.querySelector("#finalMoneyAmount").innerHTML = finalAmount;
+  document.querySelector("#finalTaxAmount").innerText = taxAmount;
+  document.querySelector("#finalMoneyAmount").innerText = finalAmount;
 });
