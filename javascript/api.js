@@ -1,0 +1,1 @@
+export const GUTENBERG_PROJECT_BASE_URL = 'http://gutendex.com';
